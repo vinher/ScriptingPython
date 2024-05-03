@@ -40,8 +40,3 @@ for carpeta in carpetas_destino.values():
 
 # Organizar archivos
 organizar_archivos()
-
-
-react199->SAT
-
-React1996# -> Infonavit
