@@ -15,11 +15,11 @@ cursor = conexion.cursor()
 faker = Faker()
 
 # Generar e insertar mil registros en la tabla productos
-for _ in range(1000):
+for _ in range(50):
     nombre  = faker.word()
     precio  = round(random.uniform(1.0, 100.0), 2)
     stock   = random.randint(1, 100)
-    imagen  = faker.image_url()
+    imagen  = "http://172.16.102.238:5000/static/images/warehouse_icon.png"
     
     # Insertar el registro en la tabla productos
     consulta = "INSERT INTO producto (nombre, precio, stock, image) VALUES (%s, %s, %s, %s)"
